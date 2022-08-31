@@ -1,0 +1,54 @@
+{
+  "name": "@imchen/rsa",
+  "version": "0.0.3",
+  "description": "Arbitrary long text encryption tool based on JSENCRYPT and support weapp program",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "packageManager": "pnpm@7.9.5",
+  "files": [
+    "dist",
+    "*.d.ts"
+  ],
+  "scripts": {
+    "release": "bumpp --commit \"release: release v%s\" --push --tag && npm publish"
+  },
+  "devDependencies": {
+    "bumpp": "^8.2.1"
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cenavy1019/rsa"
+  },
+  "keywords": [
+    "rsa",
+    "jsencrypt",
+    "encryption",
+    "weapp",
+    "wx-miniapp-program",
+    "typescript",
+    "special"
+  ],
+  "author": "hankin.dream <mm154620@163.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cenavy1019/rsa/issues"
+  },
+  "homepage": "https://github.com/Cenavy1019/rsa"
+}

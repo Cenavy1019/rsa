@@ -1,0 +1,17 @@
+.github/
+docs/
+example/
+node_modules/
+src/
+test/
+cikit/
+preview/
+bin/
+coverage/
+rollup.config.js
+webpack.config.js
+tsconfig.json
+pnpm-lock.yaml
+commitlint.config.js
+typedoc.json
+CHANGELOG.md
